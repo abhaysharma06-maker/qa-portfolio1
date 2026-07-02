@@ -1,0 +1,21 @@
+Test Case ID,Description,Steps,Expected Result,Priority,Type
+TC021,Add single item to cart,"1. Login as standard_user 2. Click on any product 3. Click Add to cart",Cart icon shows 1 item,High,Functional
+TC022,Add multiple items to cart,"1. Login as standard_user 2. Add 3 different products to cart",Cart icon shows correct item count,High,Functional
+TC023,Remove item from cart,"1. Login as standard_user 2. Add item to cart 3. Click Remove",Item is removed and cart count decreases,High,Functional
+TC024,Verify cart persists after navigation,"1. Add item to cart 2. Navigate to product page 3. Come back to cart",Cart still contains the added item,Medium,Functional
+TC025,Proceed to checkout with items in cart,"1. Add item to cart 2. Click cart icon 3. Click Checkout",User is taken to checkout information page,High,Functional
+TC026,Checkout with empty cart,"1. Login 2. Click cart icon without adding items 3. Click Checkout",User proceeds to checkout with empty order,Medium,Negative
+TC027,Fill checkout form with valid details,"1. On checkout page enter First Name: John 2. Last Name: Doe 3. Zip: 12345 4. Click Continue",User proceeds to checkout overview page,High,Functional
+TC028,Checkout with empty first name,"1. On checkout page leave First Name empty 2. Fill other fields 3. Click Continue",Error message: First Name is required,High,Negative
+TC029,Checkout with empty last name,"1. On checkout page leave Last Name empty 2. Fill other fields 3. Click Continue",Error message: Last Name is required,High,Negative
+TC030,Checkout with empty zip code,"1. On checkout page leave Zip empty 2. Fill other fields 3. Click Continue",Error message: Postal Code is required,High,Negative
+TC031,Verify order summary on overview page,"1. Add item to cart 2. Complete checkout form 3. Click Continue",Overview page shows item name price and total,High,Functional
+TC032,Verify total price calculation,"1. Add multiple items 2. Proceed to checkout overview",Total shown equals sum of all item prices plus tax,High,Functional
+TC033,Complete order successfully,"1. Add item 2. Fill checkout form 3. Click Continue 4. Click Finish",Order confirmation page shows: Thank you for your order,High,Functional
+TC034,Verify Cancel button on checkout info page,"1. Go to checkout info page 2. Click Cancel",User is taken back to cart page,Medium,Functional
+TC035,Verify Cancel button on checkout overview page,"1. Go to checkout overview page 2. Click Cancel",User is taken back to products page,Medium,Functional
+TC036,Verify Back Home button after order completion,"1. Complete order 2. Click Back Home button",User is redirected to products page,Medium,Functional
+TC037,Add highest priced item and verify in cart,"1. Login 2. Sort products by Price high to low 3. Add first item to cart 4. Go to cart",Correct item and price shown in cart,Medium,Functional
+TC038,Verify item details in cart match product page,"1. Click on a product 2. Note name and price 3. Add to cart 4. Go to cart",Item name and price in cart match product page,High,Functional
+TC039,Checkout with special characters in name field,"1. Enter First Name: J@hn! 2. Fill other fields 3. Click Continue",System either accepts or shows appropriate validation error,Low,Negative
+TC040,Verify tax is applied on checkout overview,"1. Add item to cart 2. Complete checkout form 3. View overview page",Tax amount is displayed separately from item total,Medium,Functional
