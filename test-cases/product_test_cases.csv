@@ -1,0 +1,16 @@
+Test Case ID,Description,Steps,Expected Result,Priority,Type
+TC041,Verify all products are displayed on homepage,"1. Login as standard_user 2. Observe products page",6 products are displayed on the page,High,Functional
+TC042,Sort products by Name A to Z,"1. Login 2. Click sort dropdown 3. Select Name (A to Z)",Products are sorted alphabetically A to Z,Medium,Functional
+TC043,Sort products by Name Z to A,"1. Login 2. Click sort dropdown 3. Select Name (Z to A)",Products are sorted alphabetically Z to A,Medium,Functional
+TC044,Sort products by Price low to high,"1. Login 2. Click sort dropdown 3. Select Price (low to high)",Products are sorted from lowest to highest price,High,Functional
+TC045,Sort products by Price high to low,"1. Login 2. Click sort dropdown 3. Select Price (high to low)",Products are sorted from highest to lowest price,High,Functional
+TC046,Verify product name is displayed on card,"1. Login 2. Observe each product card",Every product card shows a product name,Medium,Functional
+TC047,Verify product price is displayed on card,"1. Login 2. Observe each product card",Every product card shows a price with $ symbol,Medium,Functional
+TC048,Verify product image is displayed on card,"1. Login 2. Observe each product card",Every product card shows a product image,Medium,Functional
+TC049,Click on product name to view details,"1. Login 2. Click on any product name",Product detail page opens with name price description and Add to cart button,High,Functional
+TC050,Verify Add to cart from product detail page,"1. Login 2. Click on any product 3. Click Add to cart",Item added to cart and button changes to Remove,High,Functional
+TC051,Verify Back button on product detail page,"1. Login 2. Click on any product 3. Click Back button",User is taken back to products listing page,Medium,Functional
+TC052,Verify product description is shown on detail page,"1. Login 2. Click on any product",Product detail page shows a text description,Low,Functional
+TC053,Add to cart from product listing page,"1. Login 2. Click Add to cart directly from product card",Item is added to cart without opening detail page,High,Functional
+TC054,Remove item from product listing page,"1. Login 2. Add item to cart from listing 3. Click Remove on same card",Item is removed and button changes back to Add to cart,High,Functional
+TC055,Verify cart count updates on adding multiple products,"1. Login 2. Add 4 products one by one from listing page",Cart icon shows count 4 after each addition,High,Functional
